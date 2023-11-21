@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-secondary">
+
+    <main>
+        <div>
+            <div>
+                <h2>Ai - Värdering</h2>
+            </div>
+            <div class="infod2">
+                <div class="infod">
+                    <h4>Kommun</h4>
+                    <select class="form-select" name="kommuner" id="kommun">
+                        <option value="">--Välj Kommun--</option>
+                        <option id="Ale kommun" value="Ale kommun">Ale kommun</option>
+                        <option id="Alingsås kommun" value="Alingsås kommun">Alingsås kommun</option>
+                        <option id="Alvesta kommun" value="Alvesta kommun">Alvesta kommun</option>
+                        <option id="Aneby kommun" value="Aneby kommun">Aneby kommun</option>
+                        <option id="Arboga kommun" value="Arboga kommun">Arboga kommun</option>
+                        <option id="Arjeplogs kommun" value="Arjeplogs kommun">Arjeplogs kommun</option>
+                        <option id="Arvidsjaur kommun" value="Arvidsjaur kommun">Arvidsjaur kommun</option>
+                        <option id="Arvika kommun" value="Arvika kommun">Arvika kommun</option>
+                        <option id="Askersunds kommun" value="Askersunds kommun">Askersunds kommun</option>
+                        <option id="Avesta kommun" value="Avesta kommun">Avesta kommun</option>
+                        <option id="Bengtsfors kommun" value="Bengtsfors kommun">Bengtsfors kommun</option>
+                        <option id="Bergs kommun" value="Bergs kommun">Bergs kommun</option>
+                        <option id="Bjurholms kommun" value="Bjurholms kommun">Bjurholms kommun</option>
+                        <option id="Bjuvs kommun" value="Bjuvs kommun">Bjuvs kommun</option>
+                        <option id="Bodens kommun" value="Bodens kommun">Bodens kommun</option>
+                        <option id="Bollebygds kommun" value="Bollebygds kommun">Bollebygds kommun</option>
+                        <option id="Bollnäs kommun" value="Bollnäs kommun">Bollnäs kommun</option>
+                        <option id="Borgholms kommun" value="Borgholms kommun">Borgholms kommun</option>
+                        <option id="Borlänge kommun" value="Borlänge kommun">Borlänge kommun</option>
+                        <option id="Borås kommun" value="Borås kommun">Borås kommun</option>
+                        <option id="Botkyrka kommun" value="Botkyrka kommun">Botkyrka kommun</option>
+                        <option id="Boxholms kommun" value="Boxholms kommun">Boxholms kommun</option>
+                        <option id="Bromölla kommun" value="Bromölla kommun">Bromölla kommun</option>
+                        <option id="Bräcke kommun" value="Bräcke kommun">Bräcke kommun</option>
+                        <option id="Burlövs kommun" value="Burlövs kommun">Burlövs kommun</option>
+                        <option id="Båstads kommun" value="Båstads kommun">Båstads kommun</option>
+                        <option id="Danderyds kommun" value="Danderyds kommun">Danderyds kommun</option>
+                        <option id="Dorotea kommun" value="Dorotea kommun">Dorotea kommun</option>
+                        <option id="Eda kommun" value="Eda kommun">Eda kommun</option>
+                        <option id="Ekerö kommun" value="Ekerö kommun">Ekerö kommun</option>
+                        <option id="Eksjö kommun" value="Eksjö kommun">Eksjö kommun</option>
+                        <option id="Emmaboda kommun" value="Emmaboda kommun">Emmaboda kommun</option>
+                        <option id="Enköpings kommun" value="Enköpings kommun">Enköpings kommun</option>
+                        <option id="Eskilstuna kommun" value="Eskilstuna kommun">Eskilstuna kommun</option>
+                        <option id="Eslövs kommun" value="Eslövs kommun">Eslövs kommun</option>
+                        <option id="Essunga kommun" value="Essunga kommun">Essunga kommun</option>
+                        <option id="Fagersta kommun" value="Fagersta kommun">Fagersta kommun</option>
+                        <option id="Falkenbergs kommun" value="Falkenbergs kommun">Falkenbergs kommun</option>
+                        <option id="Falköpings kommun" value="Falköpings kommun">Falköpings kommun</option>
+                        <option id="Falu kommun" value="Falu kommun">Falu kommun</option>
+                        <option id="Filipstads kommun" value="Filipstads kommun">Filipstads kommun</option>
+                        <option id="Finspångs kommun" value="Finspångs kommun">Finspångs kommun</option>
+                        <option id="Flens kommun" value="Flens kommun">Flens kommun</option>
+                        <option id="Forshaga kommun" value="Forshaga kommun">Forshaga kommun</option>
+                        <option id="Färgelanda kommun" value="Färgelanda kommun">Färgelanda kommun</option>
+                        <option id="Gagnefs kommun" value="Gagnefs kommun">Gagnefs kommun</option>
+                        <option id="Gislaveds kommun" value="Gislaveds kommun">Gislaveds kommun</option>
+                        <option id="Gnesta kommun" value="Gnesta kommun">Gnesta kommun</option>
+                        <option id="Gnosjö kommun" value="Gnosjö kommun">Gnosjö kommun</option>
+                        <option id="Gotlands kommun" value="Gotlands kommun">Gotlands kommun</option>
+                        <option id="Grums kommun" value="Grums kommun">Grums kommun</option>
+                        <option id="Grästorps kommun" value="Grästorps kommun">Grästorps kommun</option>
+                        <option id="Gullspångs kommun" value="Gullspångs kommun">Gullspångs kommun</option>
+                        <option id="Gällivare kommun" value="Gällivare kommun">Gällivare kommun</option>
+                        <option id="Gävle kommun" value="Gävle kommun">Gävle kommun</option>
+                        <option id="Göteborgs kommun" value="Göteborgs kommun">Göteborgs kommun</option>
+                        <option id="Götene kommun" value="Götene kommun">Götene kommun</option>
+                        <option id="Habo kommun" value="Habo kommun">Habo kommun</option>
+                        <option id="Hagfors kommun" value="Hagfors kommun">Hagfors kommun</option>
+                        <option id="Hallsbergs kommun" value="Hallsbergs kommun">Hallsbergs kommun</option>
+                        <option id="Hallstahammars kommun" value="Hallstahammars kommun">Hallstahammars kommun</option>
+                        <option id="Halmstads kommun" value="Halmstads kommun">Halmstads kommun</option>
+                        <option id="Hammarö kommun" value="Hammarö kommun">Hammarö kommun</option>
+                        <option id="Haninge kommun" value="Haninge kommun">Haninge kommun</option>
+                        <option id="Haparanda kommun" value="Haparanda kommun">Haparanda kommun</option>
+                        <option id="Heby kommun" value="Heby kommun">Heby kommun</option>
+                        <option id="Hedemora kommun" value="Hedemora kommun">Hedemora kommun</option>
+                        <option id="Helsingborgs kommun" value="Helsingborgs kommun">Helsingborgs kommun</option>
+                        <option id="Herrljunga kommun" value="Herrljunga kommun">Herrljunga kommun</option>
+                        <option id="Hjo kommun" value="Hjo kommun">Hjo kommun</option>
+                        <option id="Hofors kommun" value="Hofors kommun">Hofors kommun</option>
+                        <option id="Huddinge kommun" value="Huddinge kommun">Huddinge kommun</option>
+                        <option id="Hudiksvalls kommun" value="Hudiksvalls kommun">Hudiksvalls kommun</option>
+                        <option id="Hultsfreds kommun" value="Hultsfreds kommun">Hultsfreds kommun</option>
+                        <option id="Hylte kommun" value="Hylte kommun">Hylte kommun</option>
+                        <option id="Håbo kommun" value="Håbo kommun">Håbo kommun</option>
+                        <option id="Hällefors kommun" value="Hällefors kommun">Hällefors kommun</option>
+                        <option id="Härjedalens kommun" value="Härjedalens kommun">Härjedalens kommun</option>
+                        <option id="Härnösands kommun" value="Härnösands kommun">Härnösands kommun</option>
+                        <option id="Härryda kommun" value="Härryda kommun">Härryda kommun</option>
+                        <option id="Hässleholms kommun" value="Hässleholms kommun">Hässleholms kommun</option>
+                        <option id="Höganäs kommun" value="Höganäs kommun">Höganäs kommun</option>
+                        <option id="Högsby kommun" value="Högsby kommun">Högsby kommun</option>
+                        <option id="Hörby kommun" value="Hörby kommun">Hörby kommun</option>
+                        <option id="Höörs kommun" value="Höörs kommun">Höörs kommun</option>
+                        <option id="Jokkmokks kommun" value="Jokkmokks kommun">Jokkmokks kommun</option>
+                        <option id="Järfälla kommun" value="Järfälla kommun">Järfälla kommun</option>
+                        <option id="Jönköpings kommun" value="Jönköpings kommun">Jönköpings kommun</option>
+                        <option id="Kalix kommun" value="Kalix kommun">Kalix kommun</option>
+                        <option id="Kalmar kommun" value="Kalmar kommun">Kalmar kommun</option>
+                        <option id="Karlsborgs kommun" value="Karlsborgs kommun">Karlsborgs kommun</option>
+                        <option id="Karlshamns kommun" value="Karlshamns kommun">Karlshamns kommun</option>
+                        <option id="Karlskoga kommun" value="Karlskoga kommun">Karlskoga kommun</option>
+                        <option id="Karlskrona kommun" value="Karlskrona kommun">Karlskrona kommun</option>
+                        <option id="Karlstads kommun" value="Karlstads kommun">Karlstads kommun</option>
+                        <option id="Katrineholms kommun" value="Katrineholms kommun">Katrineholms kommun</option>
+                        <option id="Kils kommun" value="Kils kommun">Kils kommun</option>
+                        <option id="Kinda kommun" value="Kinda kommun">Kinda kommun</option>
+                        <option id="Kiruna kommun" value="Kiruna kommun">Kiruna kommun</option>
+                        <option id="Klippans kommun" value="Klippans kommun">Klippans kommun</option>
+                        <option id="Knivsta kommun" value="Knivsta kommun">Knivsta kommun</option>
+                        <option id="Kramfors kommun" value="Kramfors kommun">Kramfors kommun</option>
+                        <option id="Kristianstads kommun" value="Kristianstads kommun">Kristianstads kommun</option>
+                        <option id="Kristinehamns kommun" value="Kristinehamns kommun">Kristinehamns kommun</option>
+                        <option id="Krokoms kommun" value="Krokoms kommun">Krokoms kommun</option>
+                        <option id="Kumla kommun" value="Kumla kommun">Kumla kommun</option>
+                        <option id="Kungsbacka kommun" value="Kungsbacka kommun">Kungsbacka kommun</option>
+                        <option id="Kungsörs kommun" value="Kungsörs kommun">Kungsörs kommun</option>
+                        <option id="Kungälvs kommun" value="Kungälvs kommun">Kungälvs kommun</option>
+                        <option id="Kävlinge kommun" value="Kävlinge kommun">Kävlinge kommun</option>
+                        <option id="Köpings kommun" value="Köpings kommun">Köpings kommun</option>
+                        <option id="Laholms kommun" value="Laholms kommun">Laholms kommun</option>
+                        <option id="Landskrona kommun" value="Landskrona kommun">Landskrona kommun</option>
+                        <option id="Laxå kommun" value="Laxå kommun">Laxå kommun</option>
+                        <option id="Lekebergs kommun" value="Lekebergs kommun">Lekebergs kommun</option>
+                        <option id="Leksands kommun" value="Leksands kommun">Leksands kommun</option>
+                        <option id="Lerums kommun" value="Lerums kommun">Lerums kommun</option>
+                        <option id="Lessebo kommun" value="Lessebo kommun">Lessebo kommun</option>
+                        <option id="Lidingö kommun" value="Lidingö kommun">Lidingö kommun</option>
+                        <option id="Lidköping kommun" value="Lidköping kommun">Lidköping kommun</option>
+                        <option id="LillaEdets kommun" value="LillaEdets kommun">LillaEdets kommun</option>
+                        <option id="Lindesbergs kommun" value="Lindesbergs kommun">Lindesbergs kommun</option>
+                        <option id="Linköpings kommun" value="Linköpings kommun">Linköpings kommun</option>
+                        <option id="Ljungby kommun" value="Ljungby kommun">Ljungby kommun</option>
+                        <option id="Ljusdals kommun" value="Ljusdals kommun">Ljusdals kommun</option>
+                        <option id="Ljusnarsbergs kommun" value="Ljusnarsbergs kommun">Ljusnarsbergs kommun</option>
+                        <option id="Lomma kommun" value="Lomma kommun">Lomma kommun</option>
+                        <option id="Ludvika kommun" value="Ludvika kommun">Ludvika kommun</option>
+                        <option id="Luleå kommun" value="Luleå kommun">Luleå kommun</option>
+                        <option id="Lunds kommun" value="Lunds kommun">Lunds kommun</option>
+                        <option id="Lycksele kommun" value="Lycksele kommun">Lycksele kommun</option>
+                        <option id="Malmö kommun" value="Malmö kommun">Malmö kommun</option>
+                        <option id="Malung-Sälens kommun" value="Malung-Sälens kommun">Malung-Sälens kommun</option>
+                        <option id="Malå kommun" value="Malå kommun">Malå kommun</option>
+                        <option id="Mariestads kommun" value="Mariestads kommun">Mariestads kommun</option>
+                        <option id="Marks kommun" value="Marks kommun">Marks kommun</option>
+                        <option id="Melleruds kommun" value="Melleruds kommun">Melleruds kommun</option>
+                        <option id="Mjölby kommun" value="Mjölby kommun">Mjölby kommun</option>
+                        <option id="Mora kommun" value="Mora kommun">Mora kommun</option>
+                        <option id="Motala kommun" value="Motala kommun">Motala kommun</option>
+                        <option id="Mullsjö kommun" value="Mullsjö kommun">Mullsjö kommun</option>
+                        <option id="Munkedals kommun" value="Munkedals kommun">Munkedals kommun</option>
+                        <option id="Munkfors kommun" value="Munkfors kommun">Munkfors kommun</option>
+                        <option id="Mölndals kommun" value="Mölndals kommun">Mölndals kommun</option>
+                        <option id="Mönsterås kommun" value="Mönsterås kommun">Mönsterås kommun</option>
+                        <option id="Mörbylånga kommun" value="Mörbylånga kommun">Mörbylånga kommun</option>
+                        <option id="Nacka kommun" value="Nacka kommun">Nacka kommun</option>
+                        <option id="Nora kommun" value="Nora kommun">Nora kommun</option>
+                        <option id="Norbergs kommun" value="Norbergs kommun">Norbergs kommun</option>
+                        <option id="Nordanstigs kommun" value="Nordanstigs kommun">Nordanstigs kommun</option>
+                        <option id="Nordmalings kommun" value="Nordmalings kommun">Nordmalings kommun</option>
+                        <option id="Norrköpings kommun" value="Norrköpings kommun">Norrköpings kommun</option>
+                        <option id="Norrtälje kommun" value="Norrtälje kommun">Norrtälje kommun</option>
+                        <option id="Norsjö kommun" value="Norsjö kommun">Norsjö kommun</option>
+                        <option id="Nybro kommun" value="Nybro kommun">Nybro kommun</option>
+                        <option id="Nykvarns kommun" value="Nykvarns kommun">Nykvarns kommun</option>
+                        <option id="Nyköpings kommun" value="Nyköpings kommun">Nyköpings kommun</option>
+                        <option id="Nynäshamns kommun" value="Nynäshamns kommun">Nynäshamns kommun</option>
+                        <option id="Nässjö kommun" value="Nässjö kommun">Nässjö kommun</option>
+                        <option id="Ockelbo kommun" value="Ockelbo kommun">Ockelbo kommun</option>
+                        <option id="Olofströms kommun" value="Olofströms kommun">Olofströms kommun</option>
+                        <option id="Orsa kommun" value="Orsa kommun">Orsa kommun</option>
+                        <option id="Orust kommun" value="Orust kommun">Orust kommun</option>
+                        <option id="Osby kommun" value="Osby kommun">Osby kommun</option>
+                        <option id="Oskarshamns kommun" value="Oskarshamns kommun">Oskarshamns kommun</option>
+                        <option id="Ovanåkers kommun" value="Ovanåkers kommun">Ovanåkers kommun</option>
+                        <option id="Oxelösunds kommun" value="Oxelösunds kommun">Oxelösunds kommun</option>
+                        <option id="Pajala kommun" value="Pajala kommun">Pajala kommun</option>
+                        <option id="Partille kommun" value="Partille kommun">Partille kommun</option>
+                        <option id="Perstorps kommun" value="Perstorps kommun">Perstorps kommun</option>
+                        <option id="Piteå kommun" value="Piteå kommun">Piteå kommun</option>
+                        <option id="Ragunda kommun" value="Ragunda kommun">Ragunda kommun</option>
+                        <option id="Robertsfors kommun" value="Robertsfors kommun">Robertsfors kommun</option>
+                        <option id="Ronneby kommun" value="Ronneby kommun">Ronneby kommun</option>
+                        <option id="Rättviks kommun" value="Rättviks kommun">Rättviks kommun</option>
+                        <option id="Sala kommun" value="Sala kommun">Sala kommun</option>
+                        <option id="Salems kommun" value="Salems kommun">Salems kommun</option>
+                        <option id="Sandvikens kommun" value="Sandvikens kommun">Sandvikens kommun</option>
+                        <option id="Sigtuna kommun" value="Sigtuna kommun">Sigtuna kommun</option>
+                        <option id="Simrishamns kommun" value="Simrishamns kommun">Simrishamns kommun</option>
+                        <option id="Sjöbo kommun" value="Sjöbo kommun">Sjöbo kommun</option>
+                        <option id="Skara kommun" value="Skara kommun">Skara kommun</option>
+                        <option id="Skellefteå kommun" value="Skellefteå kommun">Skellefteå kommun</option>
+                        <option id="Skinnskattebergs kommun" value="Skinnskattebergs kommun">Skinnskattebergs kommun
+                        </option>
+                        <option id="Skurups kommun" value="Skurups kommun">Skurups kommun</option>
+                        <option id="Skövde kommun" value="Skövde kommun">Skövde kommun</option>
+                        <option id="Smedjebackens kommun" value="Smedjebackens kommun">Smedjebackens kommun</option>
+                        <option id="Sollefteå kommun" value="Sollefteå kommun">Sollefteå kommun</option>
+                        <option id="Sollentuna kommun" value="Sollentuna kommun">Sollentuna kommun</option>
+                        <option id="Solna kommun" value="Solna kommun">Solna kommun</option>
+                        <option id="Sorsele kommun" value="Sorsele kommun">Sorsele kommun</option>
+                        <option id="Sotenä kommun" value="Sotenä kommun">Sotenä kommun</option>
+                        <option id="Staffanstorps kommun" value="Staffanstorps kommun">Staffanstorps kommun</option>
+                        <option id="Stenungsunds kommun" value="Stenungsunds kommun">Stenungsunds kommun</option>
+                        <option id="Stockholms kommun" value="Stockholms kommun">Stockholms kommun</option>
+                        <option id="Storfors kommun" value="Storfors kommun">Storfors kommun</option>
+                        <option id="Storumans kommun" value="Storumans kommun">Storumans kommun</option>
+                        <option id="Strängnäs kommun" value="Strängnäs kommun">Strängnäs kommun</option>
+                        <option id="Strömstads kommun" value="Strömstads kommun">Strömstads kommun</option>
+                        <option id="Strömsunds kommun" value="Strömsunds kommun">Strömsunds kommun</option>
+                        <option id="Sundbybergs kommun" value="Sundbybergs kommun">Sundbybergs kommun</option>
+                        <option id="Sundsvalls kommun" value="Sundsvalls kommun">Sundsvalls kommun</option>
+                        <option id="Sunne kommun" value="Sunne kommun">Sunne kommun</option>
+                        <option id="Surahammars kommun" value="Surahammars kommun">Surahammars kommun</option>
+                        <option id="Svalövs kommun" value="Svalövs kommun">Svalövs kommun</option>
+                        <option id="Svedala kommun" value="Svedala kommun">Svedala kommun</option>
+                        <option id="Svenljunga kommun" value="Svenljunga kommun">Svenljunga kommun</option>
+                        <option id="Säffle kommun" value="Säffle kommun">Säffle kommun</option>
+                        <option id="Säters kommun" value="Säters kommun">Säters kommun</option>
+                        <option id="Sävsjö kommun" value="Sävsjö kommun">Sävsjö kommun</option>
+                        <option id="Söderhamns kommun" value="Söderhamns kommun">Söderhamns kommun</option>
+                        <option id="Söderköpings kommun" value="Söderköpings kommun">Söderköpings kommun</option>
+                        <option id="Södertälje kommun" value="Södertälje kommun">Södertälje kommun</option>
+                        <option id="Sölvesborgs kommun" value="Sölvesborgs kommun">Sölvesborgs kommun</option>
+                        <option id="Tanums kommun" value="Tanums kommun">Tanums kommun</option>
+                        <option id="Tibro kommun" value="Tibro kommun">Tibro kommun</option>
+                        <option id="Tidaholms kommun" value="Tidaholms kommun">Tidaholms kommun</option>
+                        <option id="Tierps kommun" value="Tierps kommun">Tierps kommun</option>
+                        <option id="Timrås kommun" value="Timrås kommun">Timrås kommun</option>
+                        <option id="Tingsryds kommun" value="Tingsryds kommun">Tingsryds kommun</option>
+                        <option id="Tjörns kommun" value="Tjörns kommun">Tjörns kommun</option>
+                        <option id="Tomelilla kommun" value="Tomelilla kommun">Tomelilla kommun</option>
+                        <option id="Torsby kommun" value="Torsby kommun">Torsby kommun</option>
+                        <option id="Torsås kommun" value="Torsås kommun">Torsås kommun</option>
+                        <option id="Tranemo kommun" value="Tranemo kommun">Tranemo kommun</option>
+                        <option id="Tranås kommun" value="Tranås kommun">Tranås kommun</option>
+                        <option id="Trelleborgs kommun" value="Trelleborgs kommun">Trelleborgs kommun</option>
+                        <option id="Trollhättans kommun" value="Trollhättans kommun">Trollhättans kommun</option>
+                        <option id="Trosa kommun" value="Trosa kommun">Trosa kommun</option>
+                        <option id="Tyresö kommun" value="Tyresö kommun">Tyresö kommun</option>
+                        <option id="Täby kommun" value="Täby kommun">Täby kommun</option>
+                        <option id="Töreboda kommun" value="Töreboda kommun">Töreboda kommun</option>
+                        <option id="Uddevalla kommun" value="Uddevalla kommun">Uddevalla kommun</option>
+                        <option id="Ulricehamns kommun" value="Ulricehamns kommun">Ulricehamns kommun</option>
+                        <option id="Umeå kommun" value="Umeå kommun">Umeå kommun</option>
+                        <option id="Upplands-Bro kommun" value="Upplands-Bro kommun">Upplands-Bro kommun</option>
+                        <option id="Upplands-Väsby kommun" value="Upplands-Väsby kommun">Upplands-Väsby kommun</option>
+                        <option id="Uppsala kommun" value="Uppsala kommun">Uppsala kommun</option>
+                        <option id="Uppvidinge kommun" value="Uppvidinge kommun">Uppvidinge kommun</option>
+                        <option id="Vadstena kommun" value="Vadstena kommun">Vadstena kommun</option>
+                        <option id="Vaggeryds kommun" value="Vaggeryds kommun">Vaggeryds kommun</option>
+                        <option id="Valdemarsviks kommun" value="Valdemarsviks kommun">Valdemarsviks kommun</option>
+                        <option id="Vallentuna kommun" value="Vallentuna kommun">Vallentuna kommun</option>
+                        <option id="Vansbro kommun" value="Vansbro kommun">Vansbro kommun</option>
+                        <option id="Vara kommun" value="Vara kommun">Vara kommun</option>
+                        <option id="Varbergs kommun" value="Varbergs kommun">Varbergs kommun</option>
+                        <option id="Vaxholms kommun" value="Vaxholms kommun">Vaxholms kommun</option>
+                        <option id="Vellinge kommun" value="Vellinge kommun">Vellinge kommun</option>
+                        <option id="Vetlanda kommun" value="Vetlanda kommun">Vetlanda kommun</option>
+                        <option id="Vilhelmina kommun" value="Vilhelmina kommun">Vilhelmina kommun</option>
+                        <option id="Vimmerby kommun" value="Vimmerby kommun">Vimmerby kommun</option>
+                        <option id="Vindelns kommun" value="Vindelns kommun">Vindelns kommun</option>
+                        <option id="Vingåkers kommun" value="Vingåkers kommun">Vingåkers kommun</option>
+                        <option id="Vårgårda kommun" value="Vårgårda kommun">Vårgårda kommun</option>
+                        <option id="Vänersborgs kommun" value="Vänersborgs kommun">Vänersborgs kommun</option>
+                        <option id="Vännäs kommun" value="Vännäs kommun">Vännäs kommun</option>
+                        <option id="Värmdö kommun" value="Värmdö kommun">Värmdö kommun</option>
+                        <option id="Värnamo kommun" value="Värnamo kommun">Värnamo kommun</option>
+                        <option id="Västerviks kommun" value="Västerviks kommun">Västerviks kommun</option>
+                        <option id="Västerås kommun" value="Västerås kommun">Västerås kommun</option>
+                        <option id="Växjö kommun" value="Växjö kommun">Växjö kommun</option>
+                        <option id="Ydre kommun" value="Ydre kommun">Ydre kommun</option>
+                        <option id="Ystads kommun" value="Ystads kommun">Ystads kommun</option>
+                        <option id="Åmåls kommun" value="Åmåls kommun">Åmåls kommun</option>
+                        <option id="Ånge kommun" value="Ånge kommun">Ånge kommun</option>
+                        <option id="Åre kommun" value="Åre kommun">Åre kommun</option>
+                        <option id="Årjängs kommun" value="Årjängs kommun">Årjängs kommun</option>
+                        <option id="Åsele kommun" value="Åsele kommun">Åsele kommun</option>
+                        <option id="Åstorps kommun" value="Åstorps kommun">Åstorps kommun</option>
+                        <option id="Åtvidabergs kommun" value="Åtvidabergs kommun">Åtvidabergs kommun</option>
+                        <option id="Älmhults kommun" value="Älmhults kommun">Älmhults kommun</option>
+                        <option id="Älvdalens kommun" value="Älvdalens kommun">Älvdalens kommun</option>
+                        <option id="Älvkarleby kommun" value="Älvkarleby kommun">Älvkarleby kommun</option>
+                        <option id="Älvsbyns kommun" value="Älvsbyns kommun">Älvsbyns kommun</option>
+                        <option id="Ängelholms kommun" value="Ängelholms kommun">Ängelholms kommun</option>
+                        <option id="Öckerö kommun" value="Öckerö kommun">Öckerö kommun</option>
+                        <option id="Ödeshögs kommun" value="Ödeshögs kommun">Ödeshögs kommun</option>
+                        <option id="Örebro kommun" value="Örebro kommun">Örebro kommun</option>
+                        <option id="Örkelljunga kommun" value="Örkelljunga kommun">Örkelljunga kommun</option>
+                        <option id="Örnsköldsviks kommun" value="Örnsköldsviks kommun">Örnsköldsviks kommun</option>
+                        <option id="Östersunds kommun" value="Östersunds kommun">Östersunds kommun</option>
+                        <option id="Österåkers kommun" value="Österåkers kommun">Österåkers kommun</option>
+                        <option id="Östhammars kommun" value="Östhammars kommun">Östhammars kommun</option>
+                        <option id="Östra Göinge kommun" value="ÖstraGöinge kommun">Östra Göinge kommun</option>
+                        <option id="Överkalix kommun" value="Överkalix kommun">Överkalix kommun</option>
+                        <option id="Övertorneå kommun" value="Övertorneå kommun">Övertorneå kommun</option>
+                    </select>
+                </div>
+                <div class="infod">
+                    <h4>Bo Area (m2)</h4>
+                    <input type="number" class="form-control" min="1" id="boarea">
+                </div>
+            </div>
+            <div class="infod2">
+                <div class="infod">
+                    <h4>Antal Rum</h4>
+                    <input type="number" class="form-control" min="1" id="rum">
+                </div>
+                <div class="infod">
+                    <h4>Tomt Area (m2)</h4>
+                    <input type="number" class="form-control" min="1" id="tomtarea">
+                </div>
+            </div>
+
+            <div class="search-btn">
+                <button class="btn btn-success" id="submit">Värdera Bostad &#x203A;</button>
+            </div>
+
+            <div id="result">
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
